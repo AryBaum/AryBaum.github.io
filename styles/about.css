@@ -1,0 +1,70 @@
+
+
+.about {
+    width: 90%;
+    margin: auto;
+    margin-top: 50vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+
+}
+
+.about-me{
+    width: 50vw;
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    /* text-decoration-line: underline; */
+}
+
+.about-title{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.about-text{
+    font-size: 15px;
+    height: 100%;
+    width: 50vw;
+    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+
+.skills {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    height: 100%;
+}
+
+.info div {
+    padding-left: 5px;
+}
+
+.info .s1, .s2{
+    width: 50%;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom:10px;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+}
+
+.skills .s2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.s2 div {
+    height: 50%;
+}

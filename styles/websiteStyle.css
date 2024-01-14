@@ -1,0 +1,257 @@
+@import "about.css";
+@import "lib.css";
+@import "updates.css";
+
+html {
+    padding-bottom: 10vh;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans';
+    box-sizing: border-box;
+    /* background-image: url('./layers1.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+   
+    /* font-family:"./...." */
+}
+
+body {
+    background: #212A3E;
+    
+    color: #F1F6F9;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background:#212A3E;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #F1F6F9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #F1F6F9;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #9BA4B5;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9BA4B5;
+}
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #9BA4B5;
+    border: 2px solid #9BA4B5;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#212A3E;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.btn-box a:hover {
+    color:#9BA4B5;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #9BA4B5;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #212A3E;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #9BA4B5;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #212A3E;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #9BA4B5;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #9BA4B5;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a:hover {
+    color:#212A3E;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9BA4B5;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #212A3E;
+    z-index: 98;
+}
+
+.logo .animate,
+.navbar .animate {
+    animation: showRight 1s ease forwards;
+
+}
+
+.home .animate {
+    animation: showRight 3s ease forwards;
+}
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+.spacer {
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./layers1.svg');
+}
+
+/* section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+} */
+
+.waves {
+    position: relative;
+    width: 100%;
+    height:15vh;
+    min-height: 100px;
+    max-height: 150px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}

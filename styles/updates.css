@@ -1,0 +1,24 @@
+.updates{
+    width: 90%;
+    margin: auto;
+    margin-top: 50vh;
+
+}
+
+.updates h1 {
+    padding: 5px;
+}
+
+.bubble-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+
+.bubble-box .bb {
+    width: 350px;
+    height: 40vh;
+    border: 1px solid black;
+}
+
